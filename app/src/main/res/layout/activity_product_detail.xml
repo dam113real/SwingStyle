@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProductDetailActivity">
+
+    <!-- Header con logo y TabLayout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    tools:ignore="Suspicious0dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="226dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logo"
+        android:contentDescription="Logo"
+        android:visibility="visible" />
+
+    <!-- TabLayout -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pulsaShop"
+            android:text="Shop" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Icono del carrito -->
+    <ImageView
+        android:id="@+id/cartIcon"
+        android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_gravity="center_vertical"
+    android:src="@drawable/carrito"
+    android:contentDescription="Carrito"
+    android:layout_marginLeft="16dp"
+    android:clickable="true"
+    android:onClick="goToCart" />
+</LinearLayout>
+
+    <!-- ScrollView para los detalles del producto -->
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del Producto" />
+
+    <!-- Nombre del producto -->
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+    <!-- Descripción del producto -->
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción detallada del producto."
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp" />
+
+    <!-- Precio del producto -->
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
+</ScrollView>
+
+    <!-- Botones para acciones -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center_horizontal"
+android:paddingTop="8dp">
+
+<Button
+    android:id="@+id/btnAddToCart"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Añadir al Carrito"
+    android:backgroundTint="@color/design_default_color_primary"
+    android:textColor="@android:color/white" />
+
+<Button
+    android:id="@+id/btnBackToShop"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginStart="8dp"
+    android:text="Volver a la Tienda"
+    android:backgroundTint="@color/design_default_color_secondary"
+    android:textColor="@android:color/white" />
+</LinearLayout>
+    </LinearLayout>

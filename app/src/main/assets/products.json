@@ -1,0 +1,61 @@
+[
+
+    {
+      "id": 1,
+      "name": "Gold Leone",
+      "description": "Gloves",
+      "price": 40.0,
+      "image": "leone1"
+    },
+    {
+      "id": 2,
+      "name": "Cleto Reyes",
+      "description": "Gloves",
+      "price": 65.0,
+      "image": "cletoreyes"
+    },
+
+  {
+    "id": 3,
+    "name": "Leone T-Shirt",
+    "description": "SlimFit ",
+    "price": 35.0,
+    "image": "leonetermica"
+  },
+  {
+    "id": 4,
+    "name": "Thai T-Shirt",
+    "description": "Regular",
+    "price": 25.0,
+    "image": "camisetathai"
+  },
+  {
+    "id": 5,
+    "name": "Budhha Elbow Pads",
+    "description": "Elbow Pads ",
+    "price": 55.0,
+    "image": "buddhacoderas"
+  },
+  {
+    "id": 6,
+    "name": "Leone Helmet",
+    "description": "Helmet",
+    "price": 25.0,
+    "image": "leonehelmet"
+  },
+
+  {
+    "id": 7,
+    "name": "Budhha Short",
+    "description": "Short ",
+    "price": 45.0,
+    "image": "buddhashort"
+  },
+  {
+    "id": 8,
+    "name": "Venum Short",
+    "description": "Slim Fit",
+    "price": 25.0,
+    "image": "venumslimshort"
+  }
+]
